@@ -52,17 +52,17 @@
       "type": "object",
       "title": "PGSQL configuration",
       "properties": {
-        "pgsql.logDebugInfo": {
+        "PGSQL.logDebugInfo": {
           "type": "boolean",
           "default": false,
           "description": "[Optional] Log debug output to the VS Code console (Help -> Toggle Developer Tools)"
         },
-        "pgsql.enabled": {
+        "PGSQL.enabled": {
           "type": "boolean",
           "default": true,
           "description": "[Optional] Enable PostgreSQL support (currently in development)"
         },
-        "pgsql.debugSourcePath": {
+        "PGSQL.debugSourcePath": {
           "type": [
             "string",
             "null"
@@ -70,27 +70,27 @@
           "default": null,
           "description": "[Optional] Path to the source directory of the PostgreSQL Tools Service, for debugging"
         },
-        "pgsql.useDebugSource": {
+        "PGSQL.useDebugSource": {
           "type": "boolean",
           "default": false,
           "description": "[Optional] Enable running the PGSQL extension via the path set in pgsql.debugSourcePath"
         },
-        "pgsql.enableStartupDebugging": {
+        "PGSQL.enableStartupDebugging": {
           "type": "boolean",
           "default": false,
           "description": "[Optional] Whether to make the PostgreSQL Tools Service wait for a debugger to attach when starting"
         },
-        "pgsql.debugServerPort": {
+        "PGSQL.debugServerPort": {
           "type": "number",
           "default": 3000,
           "description": "[Optional] The port to run the PostgreSQL Tools Service remote debugger on (default 3000)"
         },
-        "pgsql.defaultDatabase": {
+        "PGSQL.defaultDatabase": {
           "type": "string",
           "default": "postgres",
           "description": "The default database to use when creating a new PostgreSQL connection"
         },
-        "pgsql.format.keywordCase": {
+        "PGSQL.format.keywordCase": {
           "type": [
             "string",
             "null"
@@ -104,7 +104,7 @@
             "capitalize"
           ]
         },
-        "pgsql.format.identifierCase": {
+        "PGSQL.format.identifierCase": {
           "type": [
             "string",
             "null"
@@ -118,12 +118,12 @@
             "capitalize"
           ]
         },
-        "pgsql.format.stripComments": {
+        "PGSQL.format.stripComments": {
           "type": "boolean",
           "default": false,
           "description": "[Optional] If true comments are removed from the statements"
         },
-        "pgsql.format.reindent": {
+        "PGSQL.format.reindent": {
           "type": "boolean",
           "default": true,
           "description": "[Optional] If true the indentations of the statements are changed."
