@@ -99,7 +99,7 @@ export async function activate(context: vscode.ExtensionContext) {
 				commandObserver);
 		}
 	} catch (err) {
-		outputChannel.appendLine(`Failed to verify project SDK, error: ${err}`);
+		outputChannel.appendLine(localize('extension.sdkVerifyFailureMessage', 'Failed to verify project SDK, error: ', err));
 	}
 
 	for (let command of registerCommands(commandObserver, packageInfo)) {

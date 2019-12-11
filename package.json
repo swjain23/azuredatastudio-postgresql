@@ -351,6 +351,11 @@
         "category": "PostgreSQLProject"
       },
       {
+        "command": "pgproj.create.serverObject",
+        "title": "New PostgreSQL Object",
+        "category": "PostgreSQLProject"
+      },
+      {
         "command": "pgproj.add.new",
         "title": "New PostgreSQL Project",
         "category": "PostgreSQLProject"
@@ -378,6 +383,10 @@
         },
         {
           "command": "pgproj.create.table",
+          "when": "explorerResourceIsFolder && hasPgProject"
+        },
+        {
+          "command": "pgproj.create.serverObject",
           "when": "explorerResourceIsFolder && hasPgProject"
         },
         {
