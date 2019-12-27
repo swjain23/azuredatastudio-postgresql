@@ -19,14 +19,6 @@ const enum sdkReference {
 	Element = 2
 };
 
-export const enum buildStatus {
-	Success = 1,
-	Failure = 2,
-	Skipped = 3
-}
-
-export type BuildResult = {project: string, status: buildStatus};
-
 export type ProjectInformation = {
 	path: string;
 	sdkVersion: string;

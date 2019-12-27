@@ -96,10 +96,7 @@ export async function runDotNetCommand(dotNetSdk: DotNetInfo, args: string[], co
 		handleData(dotnet.stdout);
 		handleData(dotnet.stderr);
 
-		dotnet.on('close', (code) => {
-			if (code === 1) {
-				reject();
-			}
+		dotnet.on('close', () => {
 			resolve();
 		});
 
